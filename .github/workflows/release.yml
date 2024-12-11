@@ -24,6 +24,6 @@ jobs:
       - name: Publish
         run: 
           cd src/Common/bin/Release && 
-          dotnet nuget push *.nupkg --source https://github.com/UnspokenTeam/index.json --api-key ${GITHUB_TOKEN}
+          dotnet nuget push *.nupkg --source https://nuget.pkg.github.com/UnspokenTeam/index.json --api-key ${GITHUB_TOKEN}
         env: 
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
