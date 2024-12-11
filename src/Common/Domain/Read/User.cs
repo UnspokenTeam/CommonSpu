@@ -1,4 +1,4 @@
-namespace Common.Domain;
+namespace Common.Domain.Read;
 
 public class User
 {
@@ -7,4 +7,7 @@ public class User
     public string Email { get; set; } = string.Empty;
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public DateTime? DeletedAt { get; set; }
+
+    public ICollection<JobPermission> JobPermissions { get; set; }
+    public ICollection<Notification> Notifications { get; set; }
 }

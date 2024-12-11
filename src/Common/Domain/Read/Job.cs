@@ -1,4 +1,4 @@
-namespace Common.Domain;
+namespace Common.Domain.Read;
 
 public class Job
 {
@@ -7,4 +7,8 @@ public class Job
     public List<string> RequestedMetrics { get; set; } = [];
     public List<string>? Report { get; set; }
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    
+    public ICollection<JobPermission> JobPermissions { get; set; }
+    public ICollection<JobAttachment> JobAttachments { get; set; }
+    public ICollection<QueueJob> QueueJobs { get; set; }
 }
