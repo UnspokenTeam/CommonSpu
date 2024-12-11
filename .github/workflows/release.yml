@@ -19,7 +19,7 @@ jobs:
         run: dotnet clean && dotnet restore
       
       - name: Build
-        run: cd src/Common && dotnet pack
+        run: cd src/Common && dotnet pack && cd ../../
         
       - name: Publish
         run: 
