@@ -1,10 +1,10 @@
-namespace Common.Domain.Read;
+namespace Common.Domain;
 
 public class JobPermission
 {
     public long UserId { get; set; }
     public long JobId { get; set; }
-    public List<string> Permissions { get; set; } = [];
+    public Permission Permissions { get; set; } = null!;
     public UserToTaskType UserType { get; set; }
     
     public User User { get; set; }

@@ -1,4 +1,4 @@
-namespace Common.Domain.Write;
+namespace Common.Domain;
 
 public class JobAttachment
 {
@@ -8,4 +8,6 @@ public class JobAttachment
     public string S3BucketName { get; set; } = string.Empty;
     public AttachmentType Type { get; set; }
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    
+    public Job Job { get; set; }
 }

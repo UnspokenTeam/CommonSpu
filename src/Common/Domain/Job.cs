@@ -1,4 +1,4 @@
-namespace Common.Domain.Read;
+namespace Common.Domain;
 
 public class Job
 {
@@ -10,5 +10,5 @@ public class Job
     
     public ICollection<JobPermission> JobPermissions { get; set; }
     public ICollection<JobAttachment> JobAttachments { get; set; }
-    public ICollection<QueueJob> QueueJobs { get; set; }
+    public QueueJob QueueJobs { get; set; }
 }

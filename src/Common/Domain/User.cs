@@ -1,4 +1,4 @@
-namespace Common.Domain.Read;
+namespace Common.Domain;
 
 public class User
 {
@@ -9,5 +9,6 @@ public class User
     public DateTime? DeletedAt { get; set; }
 
     public ICollection<JobPermission> JobPermissions { get; set; }
-    public ICollection<Notification> Notifications { get; set; }
+    // public ICollection<Notification> Notifications { get; set; }
+    public ICollection<NotificationReceiver> NotificationReceivers { get; set; }
 }

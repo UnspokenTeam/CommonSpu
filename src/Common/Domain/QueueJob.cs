@@ -1,4 +1,4 @@
-namespace Common.Domain.Read;
+namespace Common.Domain;
 
 public class QueueJob
 {
