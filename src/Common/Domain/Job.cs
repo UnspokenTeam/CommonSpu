@@ -10,5 +10,6 @@ public class Job
     
     public ICollection<JobPermission> JobPermissions { get; set; }
     public ICollection<JobAttachment> JobAttachments { get; set; }
-    public QueueJob QueueJobs { get; set; }
+    public ICollection<Notification> Notifications { get; set; }
+    public QueueJob QueueJob { get; set; }
 }
